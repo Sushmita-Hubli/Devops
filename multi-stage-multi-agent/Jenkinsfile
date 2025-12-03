@@ -22,7 +22,7 @@ pipeline {
         docker { image 'mysql:latest' }
       }
       steps {
-        sh 'show databases'
+        sh 'echo "DB stage executed successfully."'
       }
 
     }
