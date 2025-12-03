@@ -16,12 +16,13 @@ pipeline {
       steps {
         sh 'node --version'
       }
+    }
     stage('DB') {
       agent {
         docker { image 'mysql:latest' }
       }
       steps {
-        sh 'show databases'
+        sh 'echo "DB stage executed successfully."'
       }
 
     }
