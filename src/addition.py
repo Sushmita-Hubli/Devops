@@ -1,4 +1,5 @@
 #app.py
+#code for addition functionality
 def add(a, b):
     return a+b
 
